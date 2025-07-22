@@ -1,37 +1,63 @@
-#contact {
-  padding: 4rem 1rem;
+.contact-section {
+  padding: 60px 20px;
   text-align: center;
-  font-family: 'Segoe UI', 'Roboto', sans-serif;
 }
 
-#contact h2 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-  color: #212529;
-  letter-spacing: 0.5px;
+.contact-title {
+  font-size: 2.4em;
+  margin-bottom: 30px;
+  color: #222;
 }
 
 .contact-container {
-  font-size: 1.2rem;
-  color: #444;
-  max-width: 600px;
+  width: 100%;
+  max-width: none;
   margin: 0 auto;
-  text-align: left;
+  background: white;
+  padding: 60px 80px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+
+  /* ¡Este bloque lo hace ancho de verdad! */
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
-.contact-container a {
-  color: #0d6efd;
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 1.3em;
+}
+
+
+.contact-icon {
+  color: #0652a3;
+  font-size: 1.4em;
+}
+
+.contact-item a {
+  color: #0652a3;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
-.contact-container a:hover {
-  color: #084298;
+.contact-item a:hover {
+  color: #003f82;
 }
 
-#contact p {
-  font-size: 1.3em;
-  line-height: 1.8;
-  color: #444;
-  margin-bottom: 1.2rem;
+/* Responsive */
+@media (max-width: 600px) {
+  .contact-container {
+    padding: 40px 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-item {
+    justify-content: center;
+  }
 }
