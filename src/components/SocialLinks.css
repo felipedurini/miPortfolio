@@ -1,0 +1,49 @@
+/* SocialLinks.css */
+#social {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+#social h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #343a40;
+}
+
+.social-links-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.social-card {
+  flex: 1 1 25%;
+  max-width: 180px;
+  aspect-ratio: 1;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+}
+
+.social-card.linkedin {
+  background: linear-gradient(135deg, #0A66C2 0%, #0062A3 100%);
+}
+
+.social-card.github {
+  background: linear-gradient(135deg, #333333 0%, #57606A 100%);
+}
+
+.social-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.social-icon {
+  width: 40%;
+  height: 40%;
+  object-fit: contain;
+}
