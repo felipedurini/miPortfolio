@@ -31,7 +31,7 @@ const projectData = [
     id: 4,
     titulo: "Portfolio de Adrián",
     descripcion: "Sitio personal de un cliente, con proyectos destacados y contacto.",
-    link: "https://github.com/felipedurini/portfolio-adrian",
+    link: "https://portfolioadrianh.netlify.app/",
     image: portfolioAdrian
   }
 ];
