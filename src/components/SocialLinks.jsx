@@ -9,7 +9,7 @@ const SocialLinks = () => (
     <h2>Mis redes</h2>
     <Container className="social-links-container">
       <a
-        href="https://www.linkedin.com/in/tuusuario"
+        href="https://www.linkedin.com/in/felipedurini"
         target="_blank"
         rel="noopener noreferrer"
         className="social-card"
@@ -17,7 +17,7 @@ const SocialLinks = () => (
         <img src={linkedinIcon} alt="LinkedIn" className="social-icon" />
       </a>
       <a
-        href="https://github.com/tuusuario"
+        href="https://github.com/felipedurini"
         target="_blank"
         rel="noopener noreferrer"
         className="social-card"
