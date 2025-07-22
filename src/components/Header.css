@@ -72,3 +72,30 @@ body {
   margin: 0;
   padding-top: 90px;
 }
+
+.menu-toggle {
+  display: none;
+  font-size: 1.8em;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .menu-toggle {
+    display: block;
+    color: #333;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+}
