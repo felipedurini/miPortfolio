@@ -8,7 +8,6 @@ import "./Projects.css";
 
 import part6 from "../images/part6.png";
 import part7 from "../images/part7.png";
-import part8 from "../images/part8.png";
 import studyCover from "../images/study-cover.png";
 import portfolioAdrian from "../images/portfolioAdrian.jpg";
 
