@@ -10,6 +10,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .swiper-slide img {
@@ -24,9 +25,8 @@
 }
 
 .projects-wrapper {
-  margin-top: 1rem; 
+  margin-top: 1rem;
 }
-
 
 .slide-content {
   width: 300px;
@@ -38,8 +38,51 @@
 .project-desc {
   text-align: center;
   margin-top: 1rem;
-  font-size: 1.1rem;    
-  font-weight: 500;    
-  color: #222;       
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #222;
   max-width: 300px;
+}
+
+/* =========================
+   Proyecto destacado (Study App)
+   ========================= */
+
+.featured-project {
+  max-width: 800px;
+  margin: 0 auto 3.5rem auto;
+  text-align: center;
+}
+
+.featured-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.featured-desc {
+  font-size: 1.05rem;
+  color: #444;
+  max-width: 700px;
+  margin: 0 auto 1.5rem auto;
+  line-height: 1.5;
+}
+
+.featured-link {
+  display: inline-block;
+}
+
+.featured-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.featured-image:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
 }
