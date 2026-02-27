@@ -1,88 +1,93 @@
-.swiper {
-  width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
+.mySwiper {
+  padding: 1.2rem 0 3.6rem;
 }
 
-.swiper-slide {
-  width: 300px;
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.swiper-slide img {
-  width: 100%;
+.mySwiper .swiper-slide {
+  width: min(340px, 84vw);
   height: auto;
+}
+
+.project-slide {
+  display: flex;
+  align-items: stretch;
+}
+
+.project-link {
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid rgb(var(--border));
+  border-radius: 1.2rem;
+  background: rgb(var(--surface) / 0.9);
+  box-shadow: var(--shadow-card);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.project-link:hover {
+  box-shadow: var(--shadow-soft);
+}
+
+.project-image {
+  width: 100%;
+  height: 185px;
   object-fit: cover;
 }
 
-.mySwiper {
-  position: relative;
-  z-index: 10;
+.project-meta {
+  padding: 1rem 1rem 1.2rem;
 }
 
-.projects-wrapper {
-  margin-top: 1rem;
-}
-
-.slide-content {
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.project-title {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.35;
+  font-weight: 700;
+  color: rgb(var(--text));
 }
 
 .project-desc {
-  text-align: center;
-  margin-top: 1rem;
-  font-size: 1.1rem;
-  font-weight: 500;
-  color: #222;
-  max-width: 300px;
-}
-
-/* =========================
-   Proyecto destacado (Study App)
-   ========================= */
-
-.featured-project {
-  max-width: 800px;
-  margin: 0 auto 3.5rem auto;
-  text-align: center;
-}
-
-.featured-title {
-  font-size: 1.6rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-}
-
-.featured-desc {
-  font-size: 1.05rem;
-  color: #444;
-  max-width: 700px;
-  margin: 0 auto 1.5rem auto;
+  font-size: 0.9rem;
   line-height: 1.5;
+  color: rgb(var(--text-muted));
 }
 
-.featured-link {
-  display: inline-block;
+.mySwiper .swiper-button-prev,
+.mySwiper .swiper-button-next {
+  width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 9999px;
+  border: 1px solid rgb(var(--border));
+  color: rgb(var(--text));
+  background: rgb(var(--surface) / 0.88);
+  backdrop-filter: blur(8px);
 }
 
-.featured-image {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-  border-radius: 14px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
-  cursor: pointer;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+.mySwiper .swiper-button-prev::after,
+.mySwiper .swiper-button-next::after {
+  font-size: 0.8rem;
+  font-weight: 700;
 }
 
-.featured-image:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
+.mySwiper .swiper-pagination-bullet {
+  width: 0.45rem;
+  height: 0.45rem;
+  background: rgb(var(--text-muted));
+  opacity: 0.38;
+}
+
+.mySwiper .swiper-pagination-bullet-active {
+  background: rgb(var(--brand));
+  opacity: 0.95;
+}
+
+@media (max-width: 768px) {
+  .mySwiper .swiper-button-prev,
+  .mySwiper .swiper-button-next {
+    display: none;
+  }
+
+  .project-image {
+    height: 170px;
+  }
 }

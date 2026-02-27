@@ -7,23 +7,38 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Dependencies
+node_modules/
 
-# Editor directories and files
-!.vscode/extensions.json
-.idea
+# Build output
+dist/
+dist-ssr/
+
+# Coverage
+coverage/
+
+# Env (Vite)
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Tooling cache
+*.tsbuildinfo
+.eslintcache
+.cache/
+
+# Deploy / platforms
+.vercel/
+
+# OS
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+Thumbs.db
 
+# IDEs
+.idea/
+.vscode/
 
-pnpm-lock.yaml
-yarn.lock
-package-lock.json
-bun.lockb
+# Local agent tooling (only if it exists in your repo)
+.agents/
+skills-lock.json
