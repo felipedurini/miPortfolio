@@ -1,4 +1,5 @@
 import { Navbar } from "@/components/navbar";
+import ChatbotWidget from "@/components/ChatbotWidget";
 
 export default function DefaultLayout({
   children,
@@ -11,6 +12,7 @@ export default function DefaultLayout({
       <main className="section-shell flex flex-col gap-16 pb-20 pt-28 sm:gap-20 lg:pt-32">
         {children}
       </main>
+      <ChatbotWidget />
     </div>
   );
 }
