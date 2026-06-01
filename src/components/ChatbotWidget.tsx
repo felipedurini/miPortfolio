@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const CHATBOT_URL = "https://udify.app/chatbot/QRjFLgr19obsEysE";
+const CHATBOT_URL = import.meta.env.VITE_CHATBOT_URL || "https://udify.app/chatbot/QRjFLgr19obsEysE";
 const CHATBOT_GREETING =
   "\u00a1Hola! Soy Hera, pod\u00e9s preguntarme sobre Felipe y lo que sepa te lo dir\u00e9.";
 
